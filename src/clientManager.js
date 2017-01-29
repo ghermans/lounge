@@ -96,7 +96,7 @@ ClientManager.prototype.addUser = function(name, password) {
 		var user = {
 			user: name,
 			password: password || "",
-			log: false,
+			log: true,
 			networks: []
 		};
 		fs.writeFileSync(
